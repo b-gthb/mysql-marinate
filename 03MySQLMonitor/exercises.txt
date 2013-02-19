@@ -1,16 +1,17 @@
 1. What do we mean when we say that MySQL has a client-server architecture?
 clients connect to server to perform db operations such as reading or storing data where server
- in turn services client requests.
+   in turn services client requests.
 
 2. Use the monitor help to look up information on the SELECT statement. (We’ll discuss SELECT in detail in Chapter 5.)
 use to clarify select statement usage with accompanying parameters, even showing url reference.
 
 3. What is the difference between using the monitor in interactive mode and using
 the monitor in batch mode?
-interactive provides immediate response to single commands while present at terminal while batch mode, 
-usually used for sets of operations executes a list of sequential commands usually while operator is not present.
+interactive provides immediate response to single commands while present at terminal, while batch mode 
+usually used for large sets of operations, executes sequential list of commands, usually while operator is not 
+interactive or present at database server.
 
 4. What do the monitor user, password, and database options do?
-monitor user refers to username used when connecting to database not associated with username at os login or underwhich server is running.
-password - optional parameter passed to server associated with users to insure only user associated with that password is admitted for that computing session.
-database - specifies which database to use and foregoes user having to enter database.  if omitted user can specify database at end of mysql commands. 
+monitor user refers to username used when connecting to database not associated with os username or name underwhich server is running.
+password - optional parameter passed to server associated with users to ensure only user bearing that password is admitted to that database computing session.
+database - specifies which database to use and foregoes user having to enter database.  if omitted user can specify database at end of mysql commands as well. 
