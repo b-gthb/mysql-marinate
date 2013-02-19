@@ -1,19 +1,37 @@
 Homework for Chapter 2 of Learning MySQL (2006 edition), from p. 94:
 
 Exercises:
-1) What is command completion?
+1) What is command completion?  command completion is like tab complete in dos and linux where you start typing 
+and using tab keys it auto completes your options to get around the command line with some degree of ease.
+long time available in both linux and ms-dos as command line tool, otherwise referred to as 'tab-completion,'
+in terminal command line, when one types a command, file or directory pressing the tab key cycles through 
+possible names thereby 'completing' the command with minimal typing, enhancing speed efficiency of command line utility. 
 
 2) What are the relative advantages of installing MySQL using the package,
  directory archive (tarball or "no-install", or compiled methods?
+the tradeoff between installing using 3d party package vs directory direct vs compiled options are based on degree to 
+which one wishes to customize installation.  the xampp/lampp/wampp options are complete and stable but offer little 
+deviation from preset installation which may be a version or two behind latest releases of individual components, while to compile mysql using
+make and build tools, one can greatly customize features to ones specific need thereby improving computation and query speeds and performance. 
 
 3) How do you verify the integrity of downloaded packages?
+recommended method is to use md5 or md5sum comparing checksum number against your downloaded tar.gz value for strict agreement.
 
 4) How do you add the MySQL bin directory to the operating system path?
+dos/win:  using control panel system variable dialog box add line:
+  ';c:\program files\mysql\mysql server 5.0\bin!!'
+linux/mac:have used boot config files to edit env variables in past.
+  in your ~/.bashrc shell config file add line: 'export PATH=$PATH:/usr/local/mysql/bin:'
 
 Additional Exercises (not in the book): 
 1) Document how you installed MySQL and any issues you came across with installation. 
  (The goal is to be easy to install it again on a similar machine.)
+installed on win xp one client machine and on two linux machines of which one was power supply challenged and just getting 
+    past that but about now ready to sql rock n roll, hopefully.  
+my interest was to configure windows machine to listen to two different linux ports as networking exercise but i dont see that as part of this book.  
 
-2) Document where important files should be.
+2) mostly important files:  most all the good 'executable' stuff is in 'bin' folder to which we 'pathed' above in question four.
+other directories of interest might be data which retains user settings for phpmyadmin, scripts contains automation scripts, 
+backup for backup data and sql-bench for performance monitoring.
 
 Do not forget to do a pull request when your homework is complete.
