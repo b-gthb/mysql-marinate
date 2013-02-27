@@ -1,17 +1,28 @@
 1. What do we mean when we say that MySQL has a client-server architecture?
-clients connect to server to perform db operations such as reading or storing data where server
-   in turn services client requests.
+clients connect to server to perform db operations such as reading or storing data while server in
+turn services client requests.  in this architecture the server is able to service requests from multiple clients near simultaneously
+and transparent to user(s) to include those from mysql-monitor, mysql-graphic user interface, backend perl scripting and others. 
 
 2. Use the monitor help to look up information on the SELECT statement. (We’ll discuss SELECT in detail in Chapter 5.)
-use to clarify select statement usage with accompanying parameters, even showing url reference.
+while in 'mysql>' session type '\h select' which returns the following syntax:
+'name: 'select'  description:  syntax: select  [ALL | DISTINCT | DISTINCTROW ]   [HIGH_PRIORITY]  [STRAIGHT_JOIN]'
+     ... as help on select.  
 
 3. What is the difference between using the monitor in interactive mode and using
 the monitor in batch mode?
 interactive provides immediate response to single commands while present at terminal, while batch mode 
-usually used for large sets of operations, executes sequential list of commands, usually while operator is not 
-interactive or present at database server.
+usually used for large sets of consecutive task related operations, executes sequential list of commands, usually 
+while operator is not interactive or present at terminal to database server.
 
 4. What do the monitor user, password, and database options do?
+while they specify pertinent session connection information the following is true of each individually:
 monitor user refers to username used when connecting to database not associated with os username or name underwhich server is running.
 password - optional parameter passed to server associated with users to ensure only user bearing that password is admitted to that database computing session.
-database - specifies which database to use and foregoes user having to enter database.  if omitted user can specify database at end of mysql commands as well. 
+database - specifies which database to use and foregoes user having to enter database where if omitted user can specify database at end of mysql commands as well. 
+
+
+
+
+hi sheeri, hope all is well.  is there anyway one can submit two at once?  this just sat around even though have been 
+finished for sometime.   now i am waiting to bump this as checked in so i can send subsequent assignment.  
+how far into the book will we be going?    thanks kindly.  bs
